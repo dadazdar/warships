@@ -27,6 +27,8 @@ var Game = function (i_name) {
 		return array;
 	};
 	var playground = createArray();
+  
+  var getCoords
 
 	var shoot = function () {
 		if (!flag) {
@@ -124,7 +126,7 @@ var Game = function (i_name) {
 };
 
 $(document).ready(function () {
-	var game = new Game("{Dada}");
+	var game = new Game("{ZDARSKY}");
 	game.register();
 	setInterval(game.turn, 2000);
 });
